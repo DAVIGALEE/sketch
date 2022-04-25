@@ -1,0 +1,130 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.parent{
+    position: relative;
+    left:35%;
+    top:2in;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width:500px;
+    height:500px;
+    grid-gap:0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding:0;
+    margin:0;
+}
+#color{
+  position: relative;
+  left:24%;
+  border:none;
+  top:-1.3in;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  padding:50px;
+  background-color: none;
+  border-radius: 10px;
+}
+.buttons{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width:5in;
+  justify-content: space-between;
+  top:1in;
+  left:7in;
+}
+.btn{
+background-color: transparent;
+border: black 1px solid;
+padding:10px;
+padding-left:40px;
+padding-right:40px;
+transition: 1s ease;
+}
+.btn:hover{
+  cursor: pointer;
+  border-radius: 5px;
+}
+.active{
+  background-color: #383736;
+  color:whitesmoke;
+  border:none;
+}
+#eraseBtn:hover{
+background-color: #383736;
+color:white;
+border:none;
+}
+.range{
+  position: relative;
+  left:20%;
+  display: flex;
+  flex-direction: column;
+}
+.range p {
+  margin-top:20px;
+  position: relative;
+  left:1in;
+  font-size: 20px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+  border-radius: 30px;
+}
+                        /***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #053a5f;
+  height: 0.5rem;
+  border-radius: 20px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #053a5f;
+  height: 0.5rem;
+}
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -12px; /* Centers thumb on the track */
+   background-color: #383736;
+   border-radius: 10in;
+   height: 2rem;
+   width: 1rem;    
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 20in; /*Removes default border-radius that FF applies*/
+  background-color: #383736;
+  height: 2rem;
+  width: 1rem;
+}
+footer{
+  position: relative;
+  margin:0;
+  top:2in;
+  left:45%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
