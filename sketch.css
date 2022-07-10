@@ -73,6 +73,7 @@ border:none;
   position: relative;
   left:20%;
   display: flex;
+  width:100px;
   flex-direction: column;
 }
 .range p {
